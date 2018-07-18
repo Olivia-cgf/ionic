@@ -1,0 +1,144 @@
+<!-- <ion-header>
+    <ion-navbar>
+      <ion-title>
+        最新发布
+      </ion-title>
+    </ion-navbar>
+  </ion-header> -->
+<ion-content>
+    <!-- 公告 -->
+    <div class="banner">
+      <ion-slides pager>
+          <ion-slide style="background-color: blue">
+            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1530384082915&di=cddbd3b3acbd48e91b3ea6b5588d2e83&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F10dfa9ec8a13632741df0a1e9a8fa0ec08fac7e9.jpg " alt="">
+          </ion-slide>
+        
+          <ion-slide style="background-color: blue">
+            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1530384082915&di=08657dfbf297e36301c1d0fd7b37907e&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2Fd1160924ab18972b06b236e4edcd7b899e510a17.jpg" alt="">
+          </ion-slide>
+        
+          <ion-slide style="background-color: red">
+            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1530384082914&di=71c148a48d439508ccecbdeedf20fa43&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F4bed2e738bd4b31c82afa3958cd6277f9e2ff808.jpg" alt="">
+          </ion-slide>
+      
+        </ion-slides>
+    </div>
+   
+   <!-- 调研-->
+    <ion-grid class="survery">
+        <ion-row>
+          <ion-col text-center  (click)="gotoUserPage()">
+            <div class="surveryArea" text-center>
+              <ion-icon name="list-box" md="md-list-box"></ion-icon>
+            </div>
+            <h6>调研问卷</h6>
+          </ion-col>
+          <ion-col text-center  (click)="gotoUserPage()">
+              <div class="surveryArea" text-center>
+                <ion-icon name="list-box" md="md-list-box"></ion-icon>
+              </div>
+              <h6>调研问卷</h6>
+            </ion-col>
+          <ion-col text-center>
+              <div class="surveryArea" text-center>
+                <ion-icon name="list-box" md="md-list-box"></ion-icon>
+              </div>
+              <h6>调研问卷</h6>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col text-center  (click)="gotoUserPage()">
+                <div class="surveryArea" text-center>
+                  <ion-icon name="list-box" md="md-list-box"></ion-icon>
+                </div>
+                <h6>调研问卷</h6>
+              </ion-col>
+            <ion-col text-center>
+                <div class="surveryArea" text-center>
+                  <ion-icon name="list-box" md="md-list-box"></ion-icon>
+                </div>
+                <h6>调研问卷</h6>
+            </ion-col>
+            <ion-col text-center>
+                <div class="surveryArea" text-center>
+                  <ion-icon name="list-box" md="md-list-box"></ion-icon>
+                </div>
+                <h6>调研问卷</h6>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+<ion-row>
+   <h3 class="title" padding><ion-icon name="alarm" color="primary"></ion-icon>热门推荐（公告）</h3>
+    <ion-card class="adv"> 
+        <ion-card-header>
+            <h3 style="float:left;">人文关怀</h3>
+            <ion-icon name="cloud" item-start color="primary" style="float:right">30°</ion-icon>
+        </ion-card-header>
+        <ion-card-content text-center class="padding">
+            <ion-item (click)="gotoDetailpublish()">
+             <!-- <ion-item> -->
+                <h6 class="theme">赛龙舟 包粽子 做香囊·端午民俗乐趣多<ion-icon class="more_button" name="more"></ion-icon> </h6>
+                <div>
+                    又是一年粽叶飘香时，在端午节来临之际，为营造一个温馨欢乐的佳节氛围，6月14日（星期四）下午三点，公司在九楼餐厅举办了“赛龙舟 包粽子 做香囊”端午节主题活动，共有42位同事如约而至、欢聚一堂。
+在趣味拼图后，7人随机分为一组，“赛龙舟”正式开始，每组合作共同拼出一艘龙舟，龙头、龙尾、龙鳞、龙眼、龙须、、、、、、大家争先恐后地逐一完成。紧接着进行的是包粽子环节，在老师示范包粽子，总结为“一折叶，二盛料，三压实，四包，五扎”后，大家迫不及待地行动起来，粽叶舞动，
+                </div>
+                <span class="heart">
+                    <ion-icon name="heart" item-start color="primary" ></ion-icon>909088
+                </span>
+                <span>
+                    <ion-icon name="eye" item-start color="primary" ></ion-icon>909088
+                </span>
+            </ion-item>
+            <ion-item>
+                <h6 class="theme">主题<ion-icon class="more_button" name="more"></ion-icon> </h6>
+                <div>
+                    2018年8月8日举办生日聚会，请积极参加2018年8月8日举办生日聚会，请积极参加2018年8月8日举办生日聚会，请积极参加2018年8月8日举办生日聚会，请积极参加2018年8月8日举办生日聚会，请积极参加
+                </div>
+                <span class="heart">
+                    <ion-icon name="heart" item-start color="primary" ></ion-icon>909088
+                </span>
+                <span>
+                    <ion-icon name="eye" item-start color="primary" ></ion-icon>909088
+                </span>
+            </ion-item>
+            <ion-item>
+                <h6 class="theme">主题<ion-icon class="more_button" name="more"></ion-icon> </h6>
+                <div>
+                    2018年8月8日举办生日聚会，请积极参加2018年8月8日举办生日聚会，请积极参加2018年8月8日举办生日聚会，请积极参加2018年8月8日举办生日聚会，请积极参加2018年8月8日举办生日聚会，请积极参加
+                </div>
+                <span class="heart">
+                    <ion-icon name="heart" item-start color="primary" ></ion-icon>909088
+                </span>
+                <span>
+                    <ion-icon name="eye" item-start color="primary" ></ion-icon>909088
+                </span>
+            </ion-item>
+            <ion-item>
+                <h6 class="theme">主题<ion-icon class="more_button" name="more"></ion-icon> </h6>
+                <div>
+                    2018年8月8日举办生日聚会，请积极参加2018年8月8日举办生日聚会，请积极参加2018年8月8日举办生日聚会，请积极参加2018年8月8日举办生日聚会，请积极参加2018年8月8日举办生日聚会，请积极参加
+                </div>
+                <span class="heart">
+                    <ion-icon name="heart" item-start color="primary" ></ion-icon>909088
+                </span>
+                <span>
+                    <ion-icon name="eye" item-start color="primary" ></ion-icon>909088
+                </span>
+            </ion-item>
+            <ion-item>
+                <h6 class="theme">主题<ion-icon class="more_button" name="more"></ion-icon> </h6>
+                <div>
+                    2018年8月8日举办生日聚会，请积极参加2018年8月8日举办生日聚会，请积极参加2018年8月8日举办生日聚会，请积极参加2018年8月8日举办生日聚会，请积极参加2018年8月8日举办生日聚会，请积极参加
+                </div>
+                <span class="heart">
+                    <ion-icon name="heart" item-start color="primary" ></ion-icon>909088
+                </span>
+                <span>
+                    <ion-icon name="eye" item-start color="primary" ></ion-icon>909088
+                </span>
+            </ion-item>
+        </ion-card-content>       
+    </ion-card>
+
+</ion-row>
+</ion-content>

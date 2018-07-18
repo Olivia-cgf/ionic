@@ -1,0 +1,46 @@
+page-staticsurvery {
+    h2{
+        font-size: 18px;
+    }
+    label {
+        position: relative;
+        padding-left:20px;
+        font-size:14px;
+    }
+    label:before {
+        display: block;
+        content: "";
+        position: absolute;
+        left: -16px;
+        top: -2px;
+        width: 18px;
+        height: 18px;
+        background: #efefef;
+        border-radius: 50%;
+    }
+    input[type="radio"]:checked+label::before {
+        display: block;
+        content: "";
+        position: absolute;
+        left: -16px;
+        top: 0px;
+        width: 18px;
+        height: 18px;
+        background: #a4a3ff;
+        border-radius: 50%;
+    }
+    input[type="radio"]{
+        opacity: 0;
+    }
+    .suggestion{
+        // border-bottom: 1px solid #efefef;
+    }
+
+    ion-label{
+        font-size:14px;
+    }
+    ion-textarea{
+        border-radius: 5px;
+        border: 1px solid #ddd;
+    }
+}

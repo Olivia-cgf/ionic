@@ -1,0 +1,87 @@
+<!--
+  Generated template for the StaticsurveryPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      满意度调查
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <h2 text-center>9月份食堂问卷调查</h2>
+  <ion-card>
+      <ion-card-header radio-group>
+        1.今天食堂菜品满意度
+      </ion-card-header>
+      <ion-card-content>
+          <ion-item>
+            <input type="radio" name="food#1" value="satisfaction" id="satisfaction">
+            <label for="satisfaction">满意</label>
+          </ion-item>
+          <ion-item>
+            <input type="radio" name="food#1" value="notsatisfied" id="notsatisfied">
+            <label for="notsatisfied">不满意</label>
+          </ion-item>
+          <ion-item>
+            <input type="radio" name="food#1" value="gernal" id="gernal">
+            <label for="gernal">一般</label>
+          </ion-item>
+      </ion-card-content>
+  </ion-card>
+  <ion-card>
+      <ion-card-header radio-group>
+        2.今天食堂菜品满意度
+      </ion-card-header>
+      <ion-card-content>
+          <ion-item>
+            <input type="radio" name="food#2" value="satisfaction" id="satisfaction#2">
+            <label for="satisfaction#2">满意</label>
+          </ion-item>
+          <ion-item>
+            <input type="radio" name="food#2" value="notsatisfied" id="notsatisfied#2">
+            <label for="notsatisfied#2">不满意</label>
+          </ion-item>
+          <ion-item>
+            <input type="radio" name="food#2" value="gernal" id="gernal#2">
+            <label for="gernal#2">一般</label>
+          </ion-item>
+      </ion-card-content>
+  </ion-card>
+  <ion-card>
+      <ion-card-header>
+        3.今天食堂菜品满意度
+      </ion-card-header>
+      <ion-card-content>
+          <ion-item>
+              <ion-label>喜欢</ion-label>
+              <ion-checkbox color="primary" checked="false"></ion-checkbox>
+          </ion-item>
+          <ion-item>
+              <ion-label>一般</ion-label>
+              <ion-checkbox color="primary" checked="false"></ion-checkbox>
+          </ion-item>
+          <ion-item>
+              <ion-label>讨厌</ion-label>
+              <ion-checkbox color="primary" checked="false"></ion-checkbox>
+          </ion-item>
+      </ion-card-content>
+  </ion-card>
+  <ion-card>
+      <ion-card-header class="suggestion">
+        你有什么好的建议？
+      </ion-card-header>
+      <ion-card-content>
+      <!-- <textarea></textarea> -->
+      <ion-textarea type="text" rows="5" placeholder="填写(限200字)"></ion-textarea>
+      </ion-card-content>
+  </ion-card>
+  
+  <div text-center padding>
+    <button ion-button color="primary" block>提交</button>
+  </div>
+</ion-content>

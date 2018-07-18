@@ -1,0 +1,44 @@
+page-detailmobile {
+    .scroll-content{
+        background: #415d8e;
+    }
+    ion-card.cards-list-demo ion-card-header {
+        color: map-get($colors, primary);
+      }
+    .card-md{
+        border-radius: 5px;
+    }
+    ion-searchbar{
+       margin-top:10px;
+    }
+   .searchbar-input{
+       border-radius: 30px !important;
+       background: #000;
+       border: 0px;
+       box-shadow: none;
+   }
+   ion-card-header{
+        background: #659bff;
+        color: #fff !important;
+   }
+  .item-md{
+        border-bottom: 1px solid #f1f1f1;
+        height: 45px;
+  }
+  .item-md ion-icon[item-left], .item-md ion-icon[item-right], .item-md ion-icon[item-start], .item-md ion-icon[item-end]{
+        margin-top: 12px;
+        margin-bottom: 0px;
+        font-size: 20px;
+  }
+  .item-inner{
+    font-size: 14px;
+    padding: 0;
+    height: 45px;
+    line-height: 45px;
+    margin-left: 0px !important;
+
+  }
+  ion-card{
+      border-radius: 5px;
+  }
+}

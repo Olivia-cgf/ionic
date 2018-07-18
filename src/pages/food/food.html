@@ -1,0 +1,122 @@
+<!--
+  Generated template for the FoodPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>美食美客</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+<!-- 搜索 -->
+<ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+<!-- 地区搜索 -->
+
+  <ion-card class="area" padding>
+    <h3>XX厂区餐厅简介</h3>
+    <div>
+      <p>餐馆、食堂中的就餐部分统称为餐厅。40座及40座以下者为小餐厅，40座以上者为大餐厅。
+          餐厅的营运通常包括四大方面，一是食品原材料采购，二是食品加工，三是销售，四是就餐服务。
+          餐厅的店面及通道的设计与布置，应体现流畅、便利、安全。餐厅内部空间、座位的设计与布局包括流通空间、管理空间、调理空间、公共空间。餐厅中座席的配置有单人式、双人式、四人式、火车式、沙发式、长方型、情人座及家庭式等多种形式。餐厅的动线应尽量使餐厅中客人的流通甬道宽畅，服务人员的动线越短越好。应充分利用自然光线，给客人以舒适明亮的感觉，因为舒畅的心情更利于进食。空气调节系统是餐厅中必不可少的，因为室内空气与温度的调节对餐厅的经营有着密切的关联。餐厅还应根据营业需要考虑音响设备的布置。</p> 
+      <p>负责人：<span>张三</span></p>
+      <p>联系电话：<span>188-8888-8888</span></p> 
+    </div>  
+  </ion-card>
+
+    <ion-list class="tabpadding">   
+      <ion-item class="borderBottom"> 
+           <!-- <h2>用餐流程介绍 </h2> -->
+           <ion-toolbar no-border-top>
+            <ion-segment [(ngModel)]="foodIntroduce">
+              <ion-segment-button value="active">
+                开卡
+              </ion-segment-button>
+              <ion-segment-button value="lottery">
+                充值
+              </ion-segment-button>
+              <ion-segment-button value="dismiss">
+                退卡
+              </ion-segment-button>
+            </ion-segment>
+          </ion-toolbar>
+      </ion-item>
+   
+  
+  <div [ngSwitch]="foodIntroduce">
+    <ion-list *ngSwitchCase="'active'">
+      <ion-item>
+        <p>
+          用餐流程介绍
+        </p>
+      </ion-item>
+      <ion-item>
+        <p>
+          用餐流程介绍
+        </p>
+      </ion-item>
+      <ion-item>
+        <p>
+          用餐流程介绍
+        </p>
+      </ion-item>
+      <ion-item>
+        <p>
+          用餐流程介绍
+        </p>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'lottery'">
+      <ion-item>
+        <p>
+          用餐流程介绍
+        </p>
+      </ion-item>
+      <ion-item>
+        <p>
+          用餐流程介绍
+        </p>
+      </ion-item>
+      <ion-item>
+        <p>
+          用餐流程介绍
+        </p>
+      </ion-item>
+      <ion-item>
+        <p>
+          用餐流程介绍
+        </p>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'dismiss'">
+      <ion-item>
+        <p>
+          用餐流程介绍
+        </p>
+      </ion-item>
+      <ion-item>
+        <p>
+          用餐流程介绍
+        </p>
+      </ion-item>
+      <ion-item>
+        <p>
+          用餐流程介绍
+        </p>
+      </ion-item>
+      <ion-item>
+        <p>
+          用餐流程介绍
+        </p>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-list>
+</ion-content>

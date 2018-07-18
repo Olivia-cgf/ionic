@@ -1,0 +1,54 @@
+<!--
+  Generated template for the EatwhatPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      菜单推荐
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+    <div padding>
+        <ion-segment [(ngModel)]="time">
+          <ion-segment-button value="today">
+            今日
+          </ion-segment-button>
+          <ion-segment-button value="tomorrow">
+            明日
+          </ion-segment-button>
+        </ion-segment>
+      </div>
+      
+      <div [ngSwitch]="time">
+        <ion-list *ngSwitchCase="'tomorrow'" >
+          <ion-item>
+            <ion-thumbnail item-start>
+              <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1530124252004&di=67c1bf8333c2355b3dc9bb29b5c36c66&imgtype=0&src=http%3A%2F%2Fimg3.redocn.com%2Ftupian%2F20150119%2Fyuxiangrousi_3605880.jpg">
+            </ion-thumbnail>
+            <h2>鱼香肉丝</h2>
+          </ion-item>
+          <ion-item>
+            <ion-thumbnail item-start>
+              <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1530124252004&di=67c1bf8333c2355b3dc9bb29b5c36c66&imgtype=0&src=http%3A%2F%2Fimg3.redocn.com%2Ftupian%2F20150119%2Fyuxiangrousi_3605880.jpg">
+            </ion-thumbnail>
+            <h2>鱼香肉丝</h2>
+          </ion-item>
+        </ion-list>
+      
+        <ion-list *ngSwitchCase="'today'">
+          <ion-item>
+            <ion-thumbnail item-start>
+              <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1530124252004&di=67c1bf8333c2355b3dc9bb29b5c36c66&imgtype=0&src=http%3A%2F%2Fimg3.redocn.com%2Ftupian%2F20150119%2Fyuxiangrousi_3605880.jpg">
+            </ion-thumbnail>
+            <h2>无鱼无肉</h2>
+          </ion-item>
+        </ion-list>
+      </div>
+      
+</ion-content>

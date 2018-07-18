@@ -1,0 +1,116 @@
+page-home {
+  .banner{
+    height: 200px !important;
+    box-shadow: -9px 9px 20px #848484;
+  }
+  .toolbar-background{
+   background: #30c7f1 !important;
+  }
+  ion-title{
+   color: #387ef5 !important;
+  }
+  .toolbar-title{
+    color: #fff !important;
+  }
+  ion-card-header{
+    border-bottom: 1px dashed #ccc;
+    background: #80d0e8;
+  }
+  ion-card-header h3{
+    color:#fff;
+  }
+  ion-label{
+   font-size: 12px;
+  }
+  .padding{
+    padding: 0;
+  }
+  ion-card-content ion-item{
+    margin-top:10px !important;
+  }
+  ion-card-content ion-item:nth-child(odd){
+    border-left: 5px solid #89d9d9;
+    border-radius: 10px;
+  }
+  ion-card-content ion-item:nth-child(even){
+    // background: #eaeaea;
+    border-left: 5px solid #5ba8f4;
+    border-radius: 10px;
+  }
+ .survery ion-col{
+  // background: #1c9cec;
+  margin: 5px;
+  border-radius: 10px;
+  background: -webkit-linear-gradient(#74a2f7, #2f2fd6); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(#74a2f7, #2f2fd6); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#74a2f7, #2f2fd6); /* Firefox 3.6 - 15 */
+  background: linear-gradient(#74a2f7, #2f2fd6); /* 标准的语法 */
+ }
+ .survery ion-col:nth-child(even){
+  // background: -webkit-linear-gradient(#6a90d6, #2f2fd6); /* Safari 5.1 - 6.0 */
+  // background: -o-linear-gradient(#74a2f7, #d0f309); /* Opera 11.1 - 12.0 */
+  // background: -moz-linear-gradient(#74a2f7, #2f2fd6); /* Firefox 3.6 - 15 */
+  // background: linear-gradient(#74a2f7, #2f2fd6); /* 标准的语法 */
+ }
+ .survery ion-col:nth-child(1){
+  background: #97d3e3;
+ }
+ .survery ion-col:nth-child(2){
+  background: #93d3f6;
+}
+  .survery ion-col:nth-child(3){
+  background: #5699cb;
+  }
+ .surveryArea{
+     width: 50px;
+     height: 50px;
+     margin: 10px auto 0;
+     border-radius: 50%;
+     background:rgba($color: #000000, $alpha: 0.2)
+ }
+ ion-icon[name="list-box"]{
+    font-size: 20px;
+    color: #f7fcfd;
+    line-height: 50px;
+ }
+ ion-col h6{
+    color: #f7fcfd;
+    margin-top: 10px;
+    font-size: 12px;
+ }
+ h3.title{
+    margin: 0px !important;
+    padding: 0px 0px 0px 16px !important;
+    color: #383838;
+    font-size: 16px;
+ }
+ ion-icon[name="alarm"]{ 
+  vertical-align: middle;
+  margin-right: 10px;
+ }
+
+ ion-card.adv{
+    border: 0 !important;
+    background: rgba(0,0,0,0)0 !important;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+ }
+ .more_button{
+    float: right;
+    margin-top: -2px;
+    color: #847f7f;
+ }
+ .heart{
+    margin-right: 10px;
+ }
+ .theme{
+   border-bottom: 1px solid #ccc;
+   padding-bottom: 5px;
+ }
+ .theme~div{
+    word-wrap: break-word;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+ }
+}

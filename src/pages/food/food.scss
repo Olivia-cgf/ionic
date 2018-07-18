@@ -1,0 +1,23 @@
+page-food {
+    ion-item{
+         font-size: 12px;
+    }
+    .searchbar-md .searchbar-input,.card-md{
+        box-shadow: none;
+    }
+    .area h3{
+        padding: 15px 0;
+        border-bottom: 1px solid #efefef;
+    }
+    .card-md p{
+        padding: 5px 0;
+        font-size: 12px;
+    }
+    .tabpadding{
+        padding: 10px;
+    }
+    .tabpadding div.toolbar-background{
+        background: #fff;
+    }
+}
+

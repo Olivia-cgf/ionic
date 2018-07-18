@@ -1,0 +1,27 @@
+page-feedback {
+    h2{
+        font-size: 14px;
+        padding: 20px 10px 0;
+        color: #747fe4;
+      }
+      .theme{
+       border: 1px solid #efefef;
+       border-radius: 5px;
+       padding-left: 10px;
+      }
+      textarea{
+          margin-top: 20px;
+          width: 100%;
+          border-radius: 5px;
+          border: 1px solid #efefef;
+          height: 200px;
+          padding: 5px;
+      }
+      p{
+          font-size: 9px;
+          color: #524e4e;
+      }
+      .input-cover{
+        border: 1px solid #e0e0e0;
+      }
+}

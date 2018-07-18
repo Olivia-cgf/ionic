@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      行政服务
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>   
+      <ion-item class="borderBottom" (click)="gotoMobile()"> 
+          <ion-icon name="chatbubbles" item-start color="primary"></ion-icon>
+           <h3>常用电话 </h3>
+      </ion-item>
+ 
+      <ion-item class="borderBottom" (click)="gotoBus()"> 
+          <ion-icon name="bus" item-start color="primary"></ion-icon>
+           <h3>班车服务 </h3>
+      </ion-item>
+      <ion-item class="borderBottom" (click)="gotoLost()"> 
+          <ion-icon name="camera" item-start color="primary"></ion-icon>
+           <h3>失物招领 </h3>
+      </ion-item>
+      <ion-item class="borderBottom" (click)="gotoSurvery()"> 
+          <ion-icon name="chatbubbles" item-start color="primary"></ion-icon>
+           <h3>满意度调查 </h3>
+      </ion-item>
+      <ion-item class="borderBottom" (click)="gotoHotels()"> 
+          <ion-icon name="home" item-start color="primary"></ion-icon>
+           <h3>协议酒店 </h3>
+      </ion-item>
+  </ion-list>
+
+</ion-content>

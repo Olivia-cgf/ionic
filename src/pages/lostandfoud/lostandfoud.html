@@ -1,0 +1,93 @@
+<!--
+  Generated template for the LostandfoudPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>失物招领</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div>
+    <ion-segment [(ngModel)]="lostandfound">
+      <ion-segment-button value="lost">
+        失物
+      </ion-segment-button>
+      <ion-segment-button value="found">
+        招领
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+  
+  <div [ngSwitch]="lostandfound">
+    <ion-list *ngSwitchCase="'lost'" >
+     <ion-card>
+       <ion-card-content>
+          <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1531067010817&di=d8539789e35aa73ac7fea19aebd9a80f&imgtype=jpg&src=http%3A%2F%2Fimg0.imgtn.bdimg.com%2Fit%2Fu%3D1628210145%2C2164233232%26fm%3D214%26gp%3D0.jpg" alt="">
+          <ion-card-title>
+            红色的iphone手机在南区科技园丢失，请捡到联系失主
+          </ion-card-title>
+          <p>
+          
+            2018年7月7日 <span>8:00 PM</span>
+          </p>
+          <p>
+           <ion-icon name="call"></ion-icon>188-8888-8888
+          </p>
+       </ion-card-content>
+
+       <ion-row no-padding>
+         <ion-col>
+           <button ion-button clear small color="danger">
+             <ion-icon name="eye">&nbsp;&nbsp;8000</ion-icon>
+           </button>         
+         </ion-col>
+
+         <ion-col text-right>
+            <button ion-button clear small color="danger">
+                <ion-icon name="share">&nbsp;&nbsp;分享</ion-icon>
+            </button>
+         </ion-col>
+       </ion-row>
+    
+     </ion-card>
+    </ion-list>
+  
+    <ion-list *ngSwitchCase="'found'">
+      <ion-card class="upload">
+          <ion-item>
+              <ion-label>主题:</ion-label>
+              <ion-input type="text"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label>内容:</ion-label>
+              <ion-input type="text"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label>数量:</ion-label>
+              <ion-input type="text"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label>附件:</ion-label>
+          </ion-item>
+          <ion-card-content text-center>
+              <img src="{{pathForImage(lastImage)}}" style="width:100%;height:60%;" [hidden]="lastImage === null">
+          </ion-card-content>
+          <ion-card-content text-center (click)="presentActionSheet()"> 
+             <h3 [hidden]="lastImage !== null" style="font-size:40px;"> + </h3>
+          </ion-card-content>
+          <div text-center padding (click)="uploadImage()">
+              <button ion-button color="danger" block>提交</button>
+          </div>
+      </ion-card>
+       
+    </ion-list>
+  </div>
+  
+</ion-content>
